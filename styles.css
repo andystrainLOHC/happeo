@@ -1,13 +1,46 @@
-html {
-    font-family: Arial, Helvetica, sans-serif;
+:root {
+    --card-bg-color: #5caee0;
 }
 
-h1 {
-    margin: 0;
+html {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.banner-link {
+    flex-basis: 100%;
+}
+
+.card-link {
+    margin: 20px;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    margin: auto;
+    background-color: var(--card-bg-color);
+    height: 5rem
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
 }
 
 .card {
-    width: 200px;
-    background-color: greenyellow;
+    background-color: var(--card-bg-color);
     padding: 20px;
+    min-width: 250px;
+    /* margin: 20px; */
 }
